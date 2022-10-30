@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 
 export const ButtonContent = styled.button`
+  font-family: 'Poppins', sans-serif;
   &.button {
     cursor: pointer;
     border: none;
@@ -18,7 +19,8 @@ export const ButtonContent = styled.button`
 
   &.button--large {
     font-size: 19px;
-    padding: 1rem 6rem;
+    max-width: 250px;
+    padding: .75rem;
   }
 
   &.disabled{

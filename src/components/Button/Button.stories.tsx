@@ -9,7 +9,7 @@ export default {
 const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 
 export const Normal = Template.bind({})
-Normal.args ={
+Normal.args = {
   children: 'Tweet'
 }
 
