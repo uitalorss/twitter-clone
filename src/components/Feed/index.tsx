@@ -1,5 +1,14 @@
+import { Title } from "../Title/Title";
+import { Container, Header } from "./styles";
+import {ReactComponent as ChangeTheme} from '../../../src/assets/icons/changeTheme.svg'
+
 export function Feed(){
   return(
-    <h1>Qualquer coisa</h1>    
+    <Container>
+      <Header>
+        <Title color="white">Home</Title>
+        <ChangeTheme />
+      </Header>
+    </Container>
   )
 }
