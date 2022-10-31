@@ -8,6 +8,12 @@ export default {
 
 const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 
+export const Small = Template.bind({})
+Small.args = {
+  children: 'Tweet',
+  size: 'small'
+}
+
 export const Normal = Template.bind({})
 Normal.args = {
   children: 'Tweet'

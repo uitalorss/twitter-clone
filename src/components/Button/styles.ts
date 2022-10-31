@@ -12,6 +12,11 @@ export const ButtonContent = styled.button`
     text-align: center;
   }
 
+  &.button--small {
+    font-size: 13px;
+    padding: .25rem .5rem;
+  }
+
   &.button--normal {
     font-size: 15px;
     padding: .625rem 1rem;

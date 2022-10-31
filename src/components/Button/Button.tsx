@@ -2,7 +2,7 @@ import {ButtonContent} from './styles'
 
 export interface ButtonProps {
   children: React.ReactNode;
-  size: 'normal' | 'large';
+  size: 'normal' | 'large' | 'small';
   disabled: boolean;
   color: 'primary' | 'option' | 'transparent';
 }
