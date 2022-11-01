@@ -48,4 +48,7 @@ export const Bottom = styled.div`
     display: flex;
     flex-direction: column;
   }
+  span{
+    color: ${props => props.theme.colors.textOption}
+  }
 `
