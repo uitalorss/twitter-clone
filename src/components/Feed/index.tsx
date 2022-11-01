@@ -1,14 +1,26 @@
 import { Title } from "../Title/Title";
 import { Container, Header } from "./styles";
-import {ReactComponent as ChangeTheme} from '../../../src/assets/icons/changeTheme.svg'
+import theme from '../../../src/assets/icons/changeTheme.svg'
+import { TweetArea } from "../TweetArea/TweetArea";
+import { ButtonIcon } from "../TweetArea/styles";
 
-export function Feed(){
+interface FeedProps {
+  changeTheme(): void 
+}
+
+export function Feed({changeTheme}: FeedProps){
   return(
     <Container>
       <Header>
-        <Title color="white">Home</Title>
-        <ChangeTheme />
+        <Title color="txt-primary">Home</Title>
+        <ButtonIcon onChange={changeTheme} style={{
+          backgroundImage: `url(${theme})`,
+          backgroundRepeat: 'no-repeat'
+        }}
+        >
+        </ButtonIcon>
       </Header>
+      <TweetArea />
     </Container>
   )
 }

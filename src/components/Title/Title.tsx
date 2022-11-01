@@ -2,7 +2,7 @@ import { MainTitle } from "./styles";
 
 export interface TitleProps {
   children: React.ReactNode;
-  color: 'white' | 'black';
+  color: 'txt-primary' | 'txt-option';
   size: 'sm' | 'normal'
 }
 export function Title({children, color, size}: TitleProps){

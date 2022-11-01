@@ -1,5 +1,5 @@
 import { ThemeProvider as StyledThemeProvider } from "styled-components"
-import { defaultTheme } from "./default"
+import dark from "./dark"
 
 interface ThemeProviderProps {
   children: React.ReactNode;
@@ -7,7 +7,7 @@ interface ThemeProviderProps {
 
 export function ThemeProvider({children} : ThemeProviderProps){
   return (
-    <StyledThemeProvider theme={defaultTheme}>
+    <StyledThemeProvider theme={dark}>
       {children}
     </StyledThemeProvider>
   )

@@ -22,7 +22,7 @@ export function FollowArea(){
 
   return(
     <FollowAreaDiv>
-      <Title color="white">Who to follow</Title>
+      <Title color={"txt-primary"}>Who to follow</Title>
       {follow.map(item => {
         return (
           <FollowAreaItem>
@@ -31,7 +31,7 @@ export function FollowArea(){
             </Image>
             <div>
               <a href="">
-                <Title size="sm" color="white">{item.user}</Title>
+                <Title size="sm" color={"txt-primary"}>{item.user}</Title>
               </a>
               <span>{item.tagname}</span>
             </div>

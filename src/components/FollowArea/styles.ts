@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FollowAreaDiv = styled.div`
-  background: ${props => props.theme['dark2']};
+  background: ${props => props.theme.colors.secondary};
   border-radius: 25px;
   padding-top: 1rem;
   span{
@@ -11,7 +11,7 @@ export const FollowAreaDiv = styled.div`
 
 export const FollowAreaItem = styled.div`
   padding: .625rem 1rem;
-  border-top: 1px solid ${props => props.theme['dark4']};
+  border-top: 1px solid ${props => props.theme.colors.textOption};
   display: flex;
   justify-content: space-between;
   align-items: center;

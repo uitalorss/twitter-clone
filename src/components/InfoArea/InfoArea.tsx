@@ -4,13 +4,6 @@ import news1 from '../../../src/assets/images/imageNews1.png';
 
 
 export function InfoArea(){
-  /* Propriedades da notícia 
-  id,
-  topico
-  ancora com a noticia
-  imagem
-  trending
-  */
 
   const news = [
     {
@@ -53,7 +46,7 @@ export function InfoArea(){
 
   return(
     <InfoAreaDiv>
-      <Title color="white">What's Happening</Title>
+      <Title color="txt-primary">What's Happening</Title>
       {news.map(item => {
         return (
           <InfoAreaItem>

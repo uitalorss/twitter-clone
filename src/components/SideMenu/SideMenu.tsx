@@ -12,8 +12,6 @@ import {ReactComponent as BtnMore2 }  from '../../../src/assets/icons/more2.svg'
 import imageUser from '../../../src/assets/imageUser.png';
 import { Button } from '../Button/Button';
 import { Title } from '../Title/Title';
-import { ButtonNav } from '../ButtonNav/ButtonNav';
-
  
 
 export function SideMenu(){
@@ -24,42 +22,42 @@ export function SideMenu(){
         <div className='sideMenu'>
           <ButtonNavItem>
             <BtnHome />
-            <Title color='white'>Home</Title>
+            <Title color='txt-primary'>Home</Title>
           </ButtonNavItem>
 
           <ButtonNavItem>
             <BtnExplore />
-            <Title color='white'>Explore</Title>
+            <Title color='txt-primary'>Explore</Title>
           </ButtonNavItem>
 
           <ButtonNavItem>
             <BtnNotifications />
-            <Title color='white'>Notifications</Title>
+            <Title color='txt-primary'>Notifications</Title>
           </ButtonNavItem>
 
           <ButtonNavItem>
             <BtnMessages />
-            <Title color='white'>Messages</Title>
+            <Title color='txt-primary'>Messages</Title>
           </ButtonNavItem>
 
           <ButtonNavItem>
             <BtnLists />
-            <Title color='white'>Lists</Title>
+            <Title color='txt-primary'>Lists</Title>
           </ButtonNavItem>
 
           <ButtonNavItem>
             <BtnProfile />
-            <Title color='white'>Profile</Title>
+            <Title color='txt-primary'>Profile</Title>
           </ButtonNavItem>
 
           <ButtonNavItem>
             <BtnMore />
-            <Title color='white'>More</Title>
+            <Title color='txt-primary'>More</Title>
           </ButtonNavItem>
 
           <ButtonNavItem>
             <BtnBookmarks />
-            <Title color='white'>Bookmarks</Title>
+            <Title color='txt-primary'>Bookmarks</Title>
           </ButtonNavItem>
         </div>
 
@@ -68,7 +66,7 @@ export function SideMenu(){
       <Bottom>
         <img src={imageUser} alt="" />
           <div>
-            <Title size='sm' color='white'>Jerome Bell</Title>
+            <Title size='sm' color='txt-primary'>Jerome Bell</Title>
             <span>@jeromeBell</span>
           </div>
         <BtnMore2 path='' />

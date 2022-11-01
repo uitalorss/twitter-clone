@@ -1,5 +1,4 @@
 import {createGlobalStyle} from 'styled-components'
-import { defaultTheme } from './themes/default'
 
 export const GlobalStyle = createGlobalStyle`
 * {
@@ -9,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 html, body, #root{
-  background: ${defaultTheme.dark1};
+  background: ${props => props.theme.colors.primary};
 
   max-height: 100vh;
   max-width: 100vw;

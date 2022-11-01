@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-
+  display: grid;
+  gap: 2rem;
 `
 
 export const Top = styled.div`
@@ -17,15 +18,18 @@ export const Top = styled.div`
 export const ButtonNavItem = styled.button`
   cursor: pointer;
   background: transparent;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   display: flex;
   align-items: center;
   gap: 1rem 1.5rem;
   border: none;
   outline: none;
   border-radius: 100px;
+  @media (max-with: 1600px){
+    padding: .5rem;
+  }
   &:hover{
-    background: ${props => props.theme['dark3']};
+    background: ${props => props.theme.colors.secondary};
     transition: .3s
   }
   &:last-child{

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const InfoAreaDiv = styled.div`
-  background: ${props => props.theme['dark2']};
+  background: ${props => props.theme.colors.secondary};
   border-radius: 25px;
   padding-top: 1rem;
   span{
@@ -11,7 +11,7 @@ export const InfoAreaDiv = styled.div`
 
 export const InfoAreaItem = styled.div`
   padding: .625rem 1rem;
-  border-top: 1px solid ${props => props.theme['dark4']};
+  border-top: 1px solid ${props => props.theme.colors.textOption};
   display: flex;
   gap: 0 1rem;
   div{
@@ -25,6 +25,11 @@ export const InfoAreaItem = styled.div`
     font-size: .875rem;
     line-height: 1.125rem;
     font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
   }
   }
 `

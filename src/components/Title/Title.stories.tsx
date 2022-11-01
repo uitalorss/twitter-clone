@@ -24,11 +24,11 @@ Normal.args = {
 export const Black = Template.bind({})
 Black.args = {
   children: 'Home',
-  color: 'black',
+  color: 'txt-primary',
 }
 
 export const White = Template.bind({})
 White.args = {
   children: 'Home',
-  color: 'white',
+  color: 'txt-option',
 }

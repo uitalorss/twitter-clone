@@ -34,19 +34,19 @@ export const ButtonContent = styled.button`
   }
 
   &.button--color--primary{
-    background: ${props => props.theme['primary-blue']};
-    color: ${props => props.theme['white']};
+    background: ${props => props.theme.colors.accent};
+    color: #ffffff;
   }
 
   &.button--color--option{
-    background: ${props => props.theme['white']};
-    color: ${props => props.theme['black']};
-    border: 1px solid ${props => props.theme['black']};
+    background: #ffffff;
+    color: #000000;
+    border:  #ffffff;
   }
 
   &.button--color--transparent{
     background: transparent;
-    color: ${props => props.theme['primary-blue']};
-    border: 2px solid ${props => props.theme['primary-blue']};
+    color: ${props => props.theme.colors.accent};
+    border: 2px solid ${props => props.theme.colors.accent};
   }
 `

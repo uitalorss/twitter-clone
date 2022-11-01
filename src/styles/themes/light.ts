@@ -1,3 +1,15 @@
+export default {
+  title: 'light',
+  colors: {
+    primary: '#FFFFFF',
+    secondary : '#EBEEF0',
+    accent: '#1DA1F2',
+    text: '#0F1419',
+    textOption: "#5B7083"
+  }
+}
+
+/*
 export const defaultTheme = {
   'black': '#0F1419',
   'dark1': '#17202A',
@@ -12,4 +24,4 @@ export const defaultTheme = {
   'light2': '#EBEEF0',
 
   'primary-blue': '#1DA1F2'
-}
+}*/
