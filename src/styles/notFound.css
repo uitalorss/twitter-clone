@@ -1,0 +1,30 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #227093;
+
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  background: #227093;
+}
+
+.container .image{
+  background: #227093;
+  margin: 4rem auto;
+  width: 20%;
+}
+
+.container .image img{
+  width: 20vw;
+  margin: auto;
+}
+
+.container h2{
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: white;
+}
