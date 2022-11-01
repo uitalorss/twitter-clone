@@ -21,9 +21,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [ ] Scroll na área do tweet
 - [ ] Alteração entre temas dark e light
 
-## 🚀 Instalando <twitter-clone>
-
-Para instalar o <twitter-clone>, siga estas etapas:
+## 🚀 Instalando dependências
 
 Via Gerenciador de pacotes, instale as seguintes dependências
 
@@ -45,9 +43,9 @@ yarn add --save-dev @svgr/core
 yarn add styled-components @types/styled-components
 ```
 
-## ☕ Usando <twitter-clone>
+## ☕ Usando o projeto
 
-Para usar <twitter-clone>, siga estas etapas:
+Para usar o twitter-clone, siga estas etapas:
 
 Para rodar o projeto.
 
@@ -69,11 +67,11 @@ npm run storybook
 
 Adicione comandos de execução e exemplos que você acha que os usuários acharão úteis. Fornece uma referência de opções para pontos de bônus!
 
-## 📫 Contribuindo para <twitter-clone>
+## 📫 Contribuindo com o projeto
 
 <!---Se o seu README for longo ou se você tiver algum processo ou etapas específicas que deseja que os contribuidores sigam, considere a criação de um arquivo CONTRIBUTING.md separado--->
 
-Para contribuir com <twitter-clone>, siga estas etapas:
+Para contribuir, siga estas etapas:
 
 1. Bifurque este repositório.
 2. Crie um branch: `git checkout -b <nome_branch>`.
