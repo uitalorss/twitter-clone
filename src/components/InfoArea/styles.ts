@@ -6,6 +6,12 @@ export const InfoAreaDiv = styled.div`
   padding-top: 1rem;
   span{
     padding: .625rem 1rem;
+    color: ${props => props.theme.colors.textOption};
+  }
+  a.more{
+    text-decoration: none;
+    padding: 1rem;
+    color: ${props => props.theme.colors.accent};
   }
 `
 

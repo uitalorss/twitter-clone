@@ -19,9 +19,9 @@ export function App() {
   return (
     <ThemeProvider>
       <Container>
-        <SideMenu></SideMenu>
+        <SideMenu />
         <Feed changeTheme={changeTheme} />
-        <Sidebar></Sidebar>
+        <Sidebar />
       </Container>
       <GlobalStyle />
     </ThemeProvider>

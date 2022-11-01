@@ -5,7 +5,6 @@ export const TweetForm = styled.form`
   padding-bottom: 1rem;
   border-top: 1px solid ${props => props.theme.colors.textOption}; 
   border-bottom: 1px solid ${props => props.theme.colors.textOption}; 
-
 `
 
 export const TweetInput = styled.div`
@@ -13,14 +12,15 @@ export const TweetInput = styled.div`
   padding: 1rem;
   gap: 0 1.5rem;
   textarea{
+    resize: none;
     background: transparent;
     width: 100%;
     border: none;
     outline: none;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
-    font-weight: 500;
-    color: ${props => props.theme.colors.textOption};
+    font-weight: 400;
+    color: ${props => props.theme.colors.text};
     &::placeholder{
       font-family: 'Poppins', sans-serif;
       font-size: 20px;

@@ -61,6 +61,7 @@ export function InfoArea(){
           </InfoAreaItem>
         )
       })}
+      <a className="more" href="404.html">show more</a>
     </InfoAreaDiv>
   )
 }

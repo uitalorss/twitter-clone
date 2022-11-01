@@ -16,7 +16,7 @@ export function TweetArea (){
         <textarea 
           name="" 
           id=""
-          placeholder="What's happening"
+          placeholder="What's happening?"
         >
         </textarea>
       </TweetInput>

@@ -39,6 +39,7 @@ export function FollowArea(){
           </FollowAreaItem>
         )
       })}
+        <a className="more" href="404.html">show more</a>
     </FollowAreaDiv>
   )
 }

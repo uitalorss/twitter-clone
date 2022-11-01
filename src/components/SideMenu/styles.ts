@@ -32,8 +32,8 @@ export const ButtonNavItem = styled.button`
     background: ${props => props.theme.colors.secondary};
     transition: .3s
   }
-  &:last-child{
-    margin-bottom: 2rem;
+  &:active{
+    color: ${props => props.theme.colors.accent};
   }
 `
 

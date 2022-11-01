@@ -5,9 +5,11 @@ export const SearchBarField = styled.div`
   gap: 0 1rem;
   padding: .5rem 1rem;
   background: ${props => props.theme.colors.secondary};
+  border: 2px solid ${props => props.theme.colors.secondary};
   border-radius: 100px;
   &:hover{
-    border: 2px solid ${props => props.theme.colors.accent}
+    border: 2px solid ${props => props.theme.colors.accent};
+    transition: .3s;
   }
   input{
     font-family: 'Poppins', sans-serif;

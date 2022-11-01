@@ -6,6 +6,12 @@ export const FollowAreaDiv = styled.div`
   padding-top: 1rem;
   span{
     padding: .625rem 1rem;
+    color: ${props => props.theme.colors.textOption};
+  }
+  a.more{
+    text-decoration: none;
+    padding: 1rem;
+    color: ${props => props.theme.colors.accent};
   }
 `
 
@@ -33,6 +39,6 @@ export const FollowAreaItem = styled.div`
 
 export const Image = styled.div`
   img{
-    border-radius: 10px;
+    border-radius: 100px;
   }
 `

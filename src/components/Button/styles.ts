@@ -36,6 +36,10 @@ export const ButtonContent = styled.button`
   &.button--color--primary{
     background: ${props => props.theme.colors.accent};
     color: #ffffff;
+    &:hover{
+      opacity: 90%;
+      transition: .3s;
+    }
   }
 
   &.button--color--option{
@@ -48,5 +52,10 @@ export const ButtonContent = styled.button`
     background: transparent;
     color: ${props => props.theme.colors.accent};
     border: 2px solid ${props => props.theme.colors.accent};
+    &:hover{
+      background: ${props => props.theme.colors.text};
+      border: 2px solid ${props => props.theme.colors.text};
+      transition: .3s;
+    }
   }
 `
