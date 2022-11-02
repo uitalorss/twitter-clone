@@ -52,3 +52,10 @@ export const Bottom = styled.div`
     color: ${props => props.theme.colors.textOption}
   }
 `
+
+export const Icon = styled.svg`
+  background-repeat: no-repeat;
+  width: 28px;
+  height: 28px;
+  fill: ${props => props.theme.colors.text};
+`
