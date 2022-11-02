@@ -10,7 +10,7 @@ import light from "./styles/themes/light";
 
 
 export function App() {
-  const [theme, setTheme] = useState(light);
+  const [theme, setTheme] = useState(dark);
 
   const changeTheme = () => {
     setTheme(theme.title === 'dark' ? light : dark )

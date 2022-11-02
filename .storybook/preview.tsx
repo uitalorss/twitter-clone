@@ -1,5 +1,6 @@
 import React from "react";
-import { ThemeProvider } from "../src/styles/themes/ThemeProvider";
+import { ThemeProvider } from "styled-components";
+import dark from '../src/styles/themes/dark'
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -11,10 +12,9 @@ export const parameters = {
   },
 }
 
-
 export const decorators = [
   (Story) => (
-    <ThemeProvider>
+    <ThemeProvider theme={dark}>
       <Story />
     </ThemeProvider>
   )
