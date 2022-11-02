@@ -7,9 +7,18 @@ import poll from '../../../src/assets/icons/tweet/poll.svg';
 import schedule from '../../../src/assets/icons/tweet/schedule.svg';
 import { Button } from '../Button/Button';
 import { Avatar } from '../Avatar/Avatar';
+import React, { useState } from 'react';
 
 
 export function TweetArea (){
+  const [tweetText, setTweetText] = useState('');
+
+  function newNewTweetChange(event: React.ChangeEvent<HTMLTextAreaElement>){
+    setTweetText(event.target.value)
+  }
+
+  const isTweetAreaEmpty = tweetText.length === 0;
+
   return (
     <TweetForm action="">
       <TweetInput>
@@ -18,6 +27,9 @@ export function TweetArea (){
           name="" 
           id=""
           placeholder="What's happening?"
+          maxLength={380}
+          value={tweetText}
+          onChange={newNewTweetChange}
         >
         </textarea>
       </TweetInput>
@@ -44,7 +56,10 @@ export function TweetArea (){
           backgroundRepeat: 'no-repeat'
         }}></ButtonIcon>
         </Icons>
-        <Button size='normal'>Tweet</Button>
+        <Button 
+          size='normal' 
+          disabled={isTweetAreaEmpty ? true : false}
+          >Tweet</Button>
       </ActionsTweet>
     </TweetForm>
   )

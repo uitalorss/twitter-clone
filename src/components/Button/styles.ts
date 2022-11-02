@@ -28,17 +28,21 @@ export const ButtonContent = styled.button`
     padding: .75rem;
   }
 
-  &.disabled{
-    opacity: 50%;
-    cursor: none;
-  }
-
   &.button--color--primary{
     background: ${props => props.theme.colors.accent};
     color: #ffffff;
     &:hover{
       opacity: 90%;
       transition: .3s;
+    }
+  }
+
+  &.disabled{
+    opacity: 50%;
+    cursor: none;
+    &:hover{
+      opacity: 50%;
+      cursor: none;
     }
   }
 

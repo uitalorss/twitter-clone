@@ -7,7 +7,7 @@ export const TweetForm = styled.form`
   border-bottom: 1px solid ${props => props.theme.colors.textOption}; 
 `
 
-export const TweetInput = styled.div`
+export const TweetInput = styled.form`
   display: flex;
   padding: 1rem;
   gap: 0 1.5rem;
