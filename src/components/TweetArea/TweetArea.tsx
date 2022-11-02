@@ -1,14 +1,8 @@
 import imageUser from '../../../src/assets/imageUser.png';
 import { ActionsTweet, ButtonIcon, Icons, TweetForm, TweetInput } from './styles';
-import media from '../../../src/assets/icons/tweet/media.svg';
-import emoji from '../../../src/assets/icons/tweet/emoji.svg';
-import gif from '../../../src/assets/icons/tweet/gif.svg';
-import poll from '../../../src/assets/icons/tweet/poll.svg';
-import schedule from '../../../src/assets/icons/tweet/schedule.svg';
 import { Button } from '../Button/Button';
 import { Avatar } from '../Avatar/Avatar';
 import React, { useState } from 'react';
-
 
 export function TweetArea (){
   const [tweetText, setTweetText] = useState('');
@@ -18,6 +12,30 @@ export function TweetArea (){
   }
 
   const isTweetAreaEmpty = tweetText.length === 0;
+
+  const icons = [
+    {
+      name: 'media',
+      image: '../../../src/assets/icons/tweet/media.svg'
+    },
+    {
+      name: 'emoji',
+      image: '../../../src/assets/icons/tweet/emoji.svg'
+    },
+    {
+      name: 'gif',
+      image: '../../../src/assets/icons/tweet/gif.svg'
+    },
+    {
+      name: 'poll',
+      image: '../../../src/assets/icons/tweet/poll.svg'
+    },
+    {
+      name: 'schedule',
+      image: '../../../src/assets/icons/tweet/schedule.svg'
+    },
+  ]
+
 
   return (
     <TweetForm action="">
@@ -35,26 +53,14 @@ export function TweetArea (){
       </TweetInput>
       <ActionsTweet>
         <Icons>
-        <ButtonIcon style={{
-          backgroundImage: `url(${media})`,
-          backgroundRepeat: 'no-repeat'
-        }}></ButtonIcon>
-          <ButtonIcon style={{
-          backgroundImage: `url(${gif})`,
-          backgroundRepeat: 'no-repeat'
-        }}></ButtonIcon>
-          <ButtonIcon style={{
-          backgroundImage: `url(${poll})`,
-          backgroundRepeat: 'no-repeat'
-        }}></ButtonIcon>
-          <ButtonIcon style={{
-          backgroundImage: `url(${emoji})`,
-          backgroundRepeat: 'no-repeat'
-        }}></ButtonIcon>
-          <ButtonIcon style={{
-          backgroundImage: `url(${schedule})`,
-          backgroundRepeat: 'no-repeat'
-        }}></ButtonIcon>
+          {icons.map(item => {
+            return (
+              <ButtonIcon style={{
+                backgroundImage: `url(${item.image})`,
+                backgroundRepeat: 'no-repeat'
+              }}></ButtonIcon>
+            )
+          })}
         </Icons>
         <Button 
           size='normal' 
