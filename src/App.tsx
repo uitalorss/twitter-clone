@@ -1,5 +1,5 @@
 import { GlobalStyle } from "./styles/global";
-import { ThemeProvider } from "./styles/themes/ThemeProvider";
+import { ThemeProvider } from "styled-components";
 import { Container } from "./styles";
 import { SideMenu } from "./components/SideMenu/SideMenu";
 import { Feed } from "./components/Feed";
@@ -10,14 +10,14 @@ import light from "./styles/themes/light";
 
 
 export function App() {
-  const [theme, setTheme] = useState(dark);
+  const [theme, setTheme] = useState(light);
 
   const changeTheme = () => {
-    setTheme(theme.title === 'dark' ? light : dark)
+    setTheme(theme.title === 'dark' ? light : dark )
   }
 
   return (
-    <ThemeProvider>
+    <ThemeProvider theme={theme}>
       <Container>
         <SideMenu />
         <Feed changeTheme={changeTheme} />

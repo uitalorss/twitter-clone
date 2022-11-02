@@ -13,7 +13,7 @@ export function Feed({changeTheme}: FeedProps){
     <Container>
       <Header>
         <Title color="txt-primary">Home</Title>
-        <ButtonIcon onChange={changeTheme} style={{
+        <ButtonIcon onClick={changeTheme} style={{
           backgroundImage: `url(${theme})`,
           backgroundRepeat: 'no-repeat'
         }}
