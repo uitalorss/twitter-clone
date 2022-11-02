@@ -12,6 +12,7 @@ import {ReactComponent as BtnMore2 }  from '../../../src/assets/icons/more2.svg'
 import imageUser from '../../../src/assets/imageUser.png';
 import { Button } from '../Button/Button';
 import { Title } from '../Title/Title';
+import { Avatar } from '../Avatar/Avatar';
  
 
 export function SideMenu(){
@@ -64,7 +65,7 @@ export function SideMenu(){
         <Button size='large'>Tweet</Button>
       </Top>
       <Bottom>
-        <img src={imageUser} alt="" />
+        <Avatar size='small' source={imageUser} alt="Avatar do usuário" />
           <div>
             <Title size='sm' color='txt-primary'>Jerome Bell</Title>
             <span>@jeromeBell</span>

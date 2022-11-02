@@ -6,13 +6,14 @@ import gif from '../../../src/assets/icons/tweet/gif.svg';
 import poll from '../../../src/assets/icons/tweet/poll.svg';
 import schedule from '../../../src/assets/icons/tweet/schedule.svg';
 import { Button } from '../Button/Button';
+import { Avatar } from '../Avatar/Avatar';
 
 
 export function TweetArea (){
   return (
     <TweetForm action="">
       <TweetInput>
-        <img src={imageUser} alt="" />
+        <Avatar size='normal' source={imageUser} alt="Avatar do usuário"/>
         <textarea 
           name="" 
           id=""

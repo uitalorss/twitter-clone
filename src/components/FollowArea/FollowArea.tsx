@@ -2,6 +2,7 @@ import { Title } from "../Title/Title";
 import {Image, FollowAreaDiv, FollowAreaItem } from "./styles";
 import news1 from '../../../src/assets/images/imageNews1.png';
 import { Button } from "../Button/Button";
+import { Avatar } from "../Avatar/Avatar";
 
 
 export function FollowArea(){
@@ -27,7 +28,7 @@ export function FollowArea(){
         return (
           <FollowAreaItem>
             <Image>
-              <img src={item.image} alt="" />
+              <Avatar size="small" source={item.image} alt="Item de usuário para seguir" />
             </Image>
             <div>
               <a href="">
