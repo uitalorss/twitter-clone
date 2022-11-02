@@ -31,7 +31,7 @@ export const InfoAreaItem = styled.div`
     font-size: .875rem;
     line-height: 1.125rem;
     font-weight: 700;
-    color: #ffffff;
+    color: ${props => props.theme.colors.text};
     text-decoration: none;
     &:hover{
       text-decoration: underline;
