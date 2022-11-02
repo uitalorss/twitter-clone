@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const TweetForm = styled.form`
   display: grid;
   padding-bottom: 1rem;
-  border-top: 1px solid ${props => props.theme.colors.textOption}; 
-  border-bottom: 1px solid ${props => props.theme.colors.textOption}; 
+  border-top: 2px solid ${props => props.theme.colors.secondary}; 
+  border-bottom: 2px solid ${props => props.theme.colors.secondary}; 
 `
 
 export const TweetInput = styled.form`

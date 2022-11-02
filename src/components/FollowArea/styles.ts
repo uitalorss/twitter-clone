@@ -4,6 +4,7 @@ export const FollowAreaDiv = styled.div`
   background: ${props => props.theme.colors.secondary};
   border-radius: 25px;
   padding-top: 1rem;
+  display: grid;
   span{
     padding: .625rem 1rem;
     color: ${props => props.theme.colors.textOption};
@@ -18,6 +19,7 @@ export const FollowAreaDiv = styled.div`
 export const FollowAreaItem = styled.div`
   padding: .625rem 1rem;
   border-top: 1px solid ${props => props.theme.colors.textOption};
+  border-bottom: 1px solid ${props => props.theme.colors.textOption};
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,10 +31,10 @@ export const FollowAreaItem = styled.div`
     font-size: 12px;
     padding: .25rem;
   }
-  a{
-    font-size: .875rem;
-    line-height: 1.125rem;
-    font-weight: 700;
-  }
+    a{
+      font-size: .875rem;
+      line-height: 1.125rem;
+      font-weight: 700;
+    }
   }
 `
