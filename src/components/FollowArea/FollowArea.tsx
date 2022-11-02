@@ -1,5 +1,5 @@
 import { Title } from "../Title/Title";
-import {Image, FollowAreaDiv, FollowAreaItem } from "./styles";
+import {FollowAreaDiv, FollowAreaItem } from "./styles";
 import news1 from '../../../src/assets/images/imageNews1.png';
 import { Button } from "../Button/Button";
 import { Avatar } from "../Avatar/Avatar";
@@ -27,9 +27,7 @@ export function FollowArea(){
       {follow.map(item => {
         return (
           <FollowAreaItem>
-            <Image>
-              <Avatar size="small" source={item.image} alt="Item de usuário para seguir" />
-            </Image>
+            <Avatar size="small" source={item.image} alt="Item de usuário para seguir" />
             <div>
               <a href="">
                 <Title size="sm" color={"txt-primary"}>{item.user}</Title>

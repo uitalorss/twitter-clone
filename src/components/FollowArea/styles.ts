@@ -36,9 +36,3 @@ export const FollowAreaItem = styled.div`
   }
   }
 `
-
-export const Image = styled.div`
-  img{
-    border-radius: 100px;
-  }
-`
