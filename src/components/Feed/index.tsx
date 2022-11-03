@@ -3,6 +3,7 @@ import { Container, Header } from "./styles";
 import theme from '../../../src/assets/icons/changeTheme.svg'
 import { TweetArea } from "../TweetArea/TweetArea";
 import { ButtonIcon } from "../TweetArea/styles";
+import { Tweets } from "../Tweets/Tweets";
 
 interface FeedProps {
   changeTheme(): void 
@@ -21,6 +22,7 @@ export function Feed({changeTheme}: FeedProps){
         </ButtonIcon>
       </Header>
       <TweetArea />
+      <Tweets />
     </Container>
   )
 }
