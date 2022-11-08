@@ -4,6 +4,7 @@ import { Button } from '../Button/Button';
 import { Avatar } from '../Avatar/Avatar';
 import React, { useState } from 'react';
 import { IntTweets } from '../../types/tweets';
+import AiOutlineHeart from 'react-icons';
 
 export interface TweetAreaProps {
   tweets: IntTweets[];

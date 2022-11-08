@@ -2,6 +2,9 @@ import { IntTweets } from "../../types/tweets";
 import { Avatar } from "../Avatar/Avatar";
 import { Title } from "../Title/Title";
 import { ListTweets, Tweet, InfoUser, TweetInfo, TweetContent, TweetActions, TweetIcons } from "./styles";
+import {AiOutlineHeart, AiOutlineRetweet} from 'react-icons/ai'
+import {FaRegComment} from 'react-icons/fa'
+import {MdIosShare} from 'react-icons/md'
 
 export interface TweetsProps {
   tweets: IntTweets[];
@@ -27,16 +30,16 @@ export function Tweets({tweets}: TweetsProps){
               </TweetContent>
               <TweetActions>
                 <TweetIcons>
-                 <img src={item.actions.reply.icon} alt="" />
+                 <FaRegComment size={24}/>
                 </TweetIcons>
                 <TweetIcons>
-                 <img src={item.actions.retweet.icon} alt="" />
+                 <AiOutlineRetweet size={24}/>
                 </TweetIcons>
                 <TweetIcons>
-                 <img src={item.actions.like.icon} alt="" />
+                 <AiOutlineHeart size={24}/>
                 </TweetIcons>
                 <TweetIcons>
-                 <img src={item.actions.share.icon} alt="" />
+                 <MdIosShare size={24} />
                 </TweetIcons>
               </TweetActions>
             </TweetInfo>
