@@ -40,6 +40,9 @@ export const TweetIcons = styled.button`
   cursor: pointer;
   background: transparent;
   border: none;
+  svg{
+    fill: ${props => props.theme.colors.text};
+  }
 `
 
 export const InfoUser = styled.div`
