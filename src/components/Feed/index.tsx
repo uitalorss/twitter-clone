@@ -25,7 +25,7 @@ export function Feed({changeTheme, tweets, setTweets}: FeedProps){
         </ButtonIcon>
       </Header>
       <TweetArea tweets={tweets} setTweets={setTweets} />
-      <Tweets tweets={tweets}/>
+      <Tweets tweets={tweets} setTweets={setTweets}/>
     </Container>
   )
 }

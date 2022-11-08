@@ -22,6 +22,7 @@ export function TweetArea ({tweets, setTweets}: TweetAreaProps){
   function handleNewTweet(event: any){
     event.preventDefault();
     setTweets([{
+      id: tweets.length + 1,
       info: {
         imgUser: '../../../src/assets/imageUser.png',
         user: 'Jerome Bell',
@@ -33,20 +34,19 @@ export function TweetArea ({tweets, setTweets}: TweetAreaProps){
       },
       actions: {
         reply: {
-          icon: '../../../src/assets/icons/tweets/comment.svg',
+          icon: false,
           counter: 0
         },
         retweet: {
-          icon: '../../../src/assets/icons/tweets/retweet.svg',
+          icon: false,
           counter: 0
         },
         like: {
-          icon: '../../../src/assets/icons/tweets/like.svg',
-          selected: false,
+          icon: false,
           counter: 0
         },
         share: {
-          icon: '../../../src/assets/icons/tweets/share.svg',
+          icon: false,
           counter: 0
         }
       }

@@ -14,6 +14,7 @@ export function App() {
   const [theme, setTheme] = useState(dark);
   const [tweets, setTweets] = useState<IntTweets[]>([
     {
+      id: 1,
       info: {
         imgUser: '../../../src/assets/images/user3.png',
         user: 'Devon Lane',
@@ -25,25 +26,25 @@ export function App() {
       },
       actions: {
         reply: {
-          icon: '../../../src/assets/icons/tweets/comment.svg',
+          icon: false,
           counter: 0
         },
         retweet: {
-          icon: '../../../src/assets/icons/tweets/retweet.svg',
+          icon: false,
           counter: 0
         },
         like: {
-          icon: '../../../src/assets/icons/tweets/like.svg',
-          selected: false,
+          icon: false,
           counter: 3
         },
         share: {
-          icon: '../../../src/assets/icons/tweets/share.svg',
+          icon: false,
           counter: 0
         }
       }
     },
     {
+      id: 2,
       info: {
         imgUser: '../../../src/assets/images/user4.png',
         user: 'Darlene Robertson',
@@ -55,20 +56,19 @@ export function App() {
       },
       actions: {
         reply: {
-          icon: '../../../src/assets/icons/tweets/comment.svg',
+          icon: false,
           counter: 1
         },
         retweet: {
-          icon: '../../../src/assets/icons/tweets/retweet.svg',
+          icon: false,
           counter: 25
         },
         like: {
-          icon: '../../../src/assets/icons/tweets/retweet.svg',
-          selected: false,
+          icon: false,
           counter: 2
         },
         share: {
-          icon: '../../../src/assets/icons/tweets/share.svg',
+          icon: false,
           counter: 4
         }
       }

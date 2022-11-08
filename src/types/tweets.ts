@@ -1,4 +1,5 @@
 export interface IntTweets {
+  id: number,
   info: {
     imgUser: string,
     user: string,
@@ -10,20 +11,19 @@ export interface IntTweets {
   },
   actions: {
     reply: {
-      icon: string,
+      icon: boolean,
       counter: number
     },
     retweet: {
-      icon: string,
+      icon: boolean,
       counter: number
     },
     like: {
-      icon: string,
-      selected: false,
+      icon: boolean,
       counter: number
     },
     share: {
-      icon: string,
+      icon: boolean,
       counter: number
     }
   }

@@ -2,19 +2,34 @@ import { IntTweets } from "../../types/tweets";
 import { Avatar } from "../Avatar/Avatar";
 import { Title } from "../Title/Title";
 import { ListTweets, Tweet, InfoUser, TweetInfo, TweetContent, TweetActions, TweetIcons } from "./styles";
-import {AiOutlineHeart, AiOutlineRetweet} from 'react-icons/ai'
+import {AiOutlineHeart, AiFillHeart, AiOutlineRetweet} from 'react-icons/ai'
 import {FaRegComment} from 'react-icons/fa'
 import {MdIosShare} from 'react-icons/md'
+import { useState } from "react";
 
 export interface TweetsProps {
   tweets: IntTweets[];
+  setTweets: React.Dispatch<React.SetStateAction<IntTweets[]>>;
 }
 
-export function Tweets({tweets}: TweetsProps){
-  
+export function Tweets({tweets, setTweets}: TweetsProps){
+
+  function handleLike(id: number){
+    let updateList: any = tweets.map(tweet => {
+      if(tweet.id === id){
+        const path = tweet;
+        path.actions.like.icon = !tweet.actions.like.icon;
+        return {...path}
+      }
+      return tweet;
+    })
+    setTweets(updateList)
+  }
+
   return (
     <ListTweets>
       {tweets.map(item => {
+        console.log(item)
         return(
           <Tweet>
             <div className="avatar">
@@ -34,9 +49,12 @@ export function Tweets({tweets}: TweetsProps){
                 </TweetIcons>
                 <TweetIcons>
                  <AiOutlineRetweet size={24}/>
-                </TweetIcons>
-                <TweetIcons>
-                 <AiOutlineHeart size={24}/>
+                  </TweetIcons>
+                  <TweetIcons onClick={() => handleLike(item.id)}>
+                 {!item.actions.like.icon ? 
+                  <AiOutlineHeart size={24}/> 
+                  : 
+                  <AiFillHeart style={{fill: '#c0392b'}} size={24}/>}
                 </TweetIcons>
                 <TweetIcons>
                  <MdIosShare size={24} />
