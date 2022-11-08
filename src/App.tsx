@@ -83,7 +83,7 @@ export function App() {
     <ThemeProvider theme={theme}>
       <Container>
         <SideMenu />
-        <Feed changeTheme={changeTheme} tweets={tweets}/>
+        <Feed changeTheme={changeTheme} tweets={tweets} setTweets={setTweets}/>
         <Sidebar />
       </Container>
       <GlobalStyle />

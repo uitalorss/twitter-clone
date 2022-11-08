@@ -1,3 +1,4 @@
+import { ChangeEvent, FormEventHandler } from 'react';
 import {ButtonContent} from './styles'
 
 export interface ButtonProps {
@@ -5,6 +6,7 @@ export interface ButtonProps {
   size: 'normal' | 'large' | 'small';
   disabled: boolean;
   color: 'primary' | 'option' | 'transparent';
+  onSubmit?: React.FormEventHandler<HTMLFormElement> | undefined;
 }
 export function Button({
     children, 

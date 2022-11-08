@@ -9,9 +9,10 @@ import { IntTweets } from "../../types/tweets";
 interface FeedProps {
   changeTheme(): void;
   tweets: IntTweets[];
+  setTweets: React.Dispatch<React.SetStateAction<IntTweets[]>>;
 }
 
-export function Feed({changeTheme, tweets}: FeedProps){
+export function Feed({changeTheme, tweets, setTweets}: FeedProps){
   return(
     <Container>
       <Header>
@@ -23,7 +24,7 @@ export function Feed({changeTheme, tweets}: FeedProps){
         >
         </ButtonIcon>
       </Header>
-      <TweetArea />
+      <TweetArea tweets={tweets} setTweets={setTweets} />
       <Tweets tweets={tweets}/>
     </Container>
   )

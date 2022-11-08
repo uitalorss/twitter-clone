@@ -3,15 +3,61 @@ import { ActionsTweet, ButtonIcon, Icons, TweetForm, TweetInput } from './styles
 import { Button } from '../Button/Button';
 import { Avatar } from '../Avatar/Avatar';
 import React, { useState } from 'react';
+import { IntTweets } from '../../types/tweets';
 
-export function TweetArea (){
+export interface TweetAreaProps {
+  tweets: IntTweets[];
+  setTweets: React.Dispatch<React.SetStateAction<IntTweets[]>>;
+}
+
+export function TweetArea ({tweets, setTweets}: TweetAreaProps){
   const [tweetText, setTweetText] = useState('');
 
   function newNewTweetChange(event: React.ChangeEvent<HTMLTextAreaElement>){
+    event.preventDefault();
     setTweetText(event.target.value)
   }
 
+  function handleNewTweet(event: any){
+    event.preventDefault();
+    setTweets([{
+      info: {
+        imgUser: '../../../src/assets/imageUser.png',
+        user: 'Jerome Bell',
+        tagUser: '@jeromeBell',
+        time: "indefinida",
+      },
+      content: {
+        tweetContent: tweetText,
+      },
+      actions: {
+        reply: {
+          icon: '../../../src/assets/icons/tweets/comment.svg',
+          counter: 0
+        },
+        retweet: {
+          icon: '../../../src/assets/icons/tweets/retweet.svg',
+          counter: 0
+        },
+        like: {
+          icon: '../../../src/assets/icons/tweets/like.svg',
+          selected: false,
+          counter: 0
+        },
+        share: {
+          icon: '../../../src/assets/icons/tweets/share.svg',
+          counter: 0
+        }
+      }
+    }, ...tweets])
+    clearTweetArea();
+  }
+
   const isTweetAreaEmpty = tweetText.length === 0;
+
+  function clearTweetArea(){
+    setTweetText('');
+  }
 
   const icons = [
     {
@@ -38,7 +84,7 @@ export function TweetArea (){
 
 
   return (
-    <TweetForm action="">
+    <TweetForm onSubmit={handleNewTweet}>
       <TweetInput>
         <Avatar size='normal' source={imageUser} alt="Avatar do usuário"/>
         <textarea 
