@@ -3,12 +3,15 @@ import { Container, Header } from "./styles";
 import theme from '../../../src/assets/icons/changeTheme.svg'
 import { TweetArea } from "../TweetArea/TweetArea";
 import { ButtonIcon } from "../TweetArea/styles";
+import { Tweets } from "../Tweets/Tweets";
+import { IntTweets } from "../../types/tweets";
 
 interface FeedProps {
-  changeTheme(): void 
+  changeTheme(): void;
+  tweets: IntTweets[];
 }
 
-export function Feed({changeTheme}: FeedProps){
+export function Feed({changeTheme, tweets}: FeedProps){
   return(
     <Container>
       <Header>
@@ -21,6 +24,7 @@ export function Feed({changeTheme}: FeedProps){
         </ButtonIcon>
       </Header>
       <TweetArea />
+      <Tweets tweets={tweets}/>
     </Container>
   )
 }

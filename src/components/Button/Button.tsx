@@ -17,6 +17,7 @@ export function Button({
   return(
     <ButtonContent
       className={['button', `button--${size}`, `button--color--${color}`, btnDisabled].join(' ')}
+      disabled={disabled}
     >
       {children}
     </ButtonContent>
