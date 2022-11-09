@@ -43,6 +43,9 @@ export const TweetIcons = styled.button`
   svg{
     fill: ${props => props.theme.colors.text};
   }
+  span{
+    color: ${props => props.theme.colors.text};
+  }
 `
 
 export const InfoUser = styled.div`

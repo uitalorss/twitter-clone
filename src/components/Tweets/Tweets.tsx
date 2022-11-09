@@ -19,6 +19,7 @@ export function Tweets({tweets, setTweets}: TweetsProps){
       if(tweet.id === id){
         const path = tweet;
         path.actions.like.icon = !tweet.actions.like.icon;
+        path.actions.like.icon ? path.actions.like.counter++ : path.actions.like.counter--;
         return {...path}
       }
       return tweet;
@@ -55,6 +56,7 @@ export function Tweets({tweets, setTweets}: TweetsProps){
                   <AiOutlineHeart size={24}/> 
                   : 
                   <AiFillHeart style={{fill: '#c0392b'}} size={24}/>}
+                  <span>{item.actions.like.counter}</span>
                 </TweetIcons>
                 <TweetIcons>
                  <MdIosShare size={24} />
