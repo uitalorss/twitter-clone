@@ -5,7 +5,6 @@ import { ListTweets, Tweet, InfoUser, TweetInfo, TweetContent, TweetActions, Twe
 import {AiOutlineHeart, AiFillHeart, AiOutlineRetweet} from 'react-icons/ai'
 import {FaRegComment} from 'react-icons/fa'
 import {MdIosShare} from 'react-icons/md'
-import { useState } from "react";
 
 export interface TweetsProps {
   tweets: IntTweets[];
