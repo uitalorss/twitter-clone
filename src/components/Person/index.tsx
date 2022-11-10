@@ -1,5 +1,5 @@
 import { Title } from "../Title/Title";
-import { Container, Description, Header } from "./styles";
+import { Activity, Container, Description, Header, Topics } from "./styles";
 import theme from '../../../src/assets/icons/changeTheme.svg'
 import { ButtonIcon } from "../TweetArea/styles";
 
@@ -47,6 +47,14 @@ export function Person({changeTheme}: PersonProps){
           </div>
         </div>
       </Description>
+      <Activity>
+        <Topics>
+          <Title color="txt-primary" size="sm">Tweets</Title>
+          <Title color="txt-primary" size="sm">Tweets & replies</Title>
+          <Title color="txt-primary" size="sm">Media</Title>
+          <Title color="txt-primary" size="sm">Likes</Title>
+        </Topics>
+      </Activity>
     </Container>
   )
 }

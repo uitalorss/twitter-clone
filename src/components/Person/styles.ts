@@ -50,3 +50,13 @@ export const Description = styled.div`
     color: ${props => props.theme.colors.text}
   }
 `
+
+export const Topics = styled.div`
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+`
+
+export const Activity = styled.div`
+
+`
