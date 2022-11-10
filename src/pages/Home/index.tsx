@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { Feed } from "../../components/Feed"
 import { Container } from "./styles"
 import { Sidebar } from "../../components/Sidebar/Sidebar"
-import { SideMenu } from "../../components/SideMenu/SideMenu"
+import { SideMenu } from "../../components/SideMenu"
 import { IntTweets } from "../../types/tweets"
 
 interface HomeProps{
@@ -73,10 +73,6 @@ export function Home({changeTheme}: HomeProps){
       }
     }
   ])
-
-  useEffect(() => {
-    localStorage.getItem('tweets') ? setTweets(JSON.parse(localStorage.getItem('tweets') || '')) : setTweets(tweets)
-  }, [tweets])
   
   return(
       <Container>

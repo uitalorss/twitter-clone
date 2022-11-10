@@ -5,6 +5,7 @@ import { Button } from '../Button/Button';
 import { Title } from '../Title/Title';
 import { Avatar } from '../Avatar/Avatar';
 import { Link } from 'react-router-dom';
+import {BsTwitter} from "react-icons/bs";
  
 
 export function SideMenu(){
@@ -55,7 +56,7 @@ export function SideMenu(){
   return(
     <Container>
       <Top>
-        <img className='logo' src={logoTwitterDark} alt="logo do Twitter" />
+        <BsTwitter className='logo' size={36} />
         <div className='sideMenu'>
           {menuIcons.map(item => {
             return(

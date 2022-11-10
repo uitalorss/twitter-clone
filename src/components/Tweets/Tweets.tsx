@@ -27,6 +27,8 @@ export function Tweets({tweets, setTweets}: TweetsProps){
     setTweets(updateList)
     localStorage.setItem("tweets", JSON.stringify(tweets))
   }
+  
+
 
   return (
     <ListTweets>

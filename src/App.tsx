@@ -1,7 +1,7 @@
 import { GlobalStyle } from "./styles/global";
 import { ThemeProvider } from "styled-components";
 import { Container } from "./styles";
-import { SideMenu } from "./components/SideMenu/SideMenu";
+import { SideMenu } from "./components/SideMenu";
 import { Feed } from "./components/Feed";
 import { Sidebar } from "./components/Sidebar/Sidebar";
 import { useState } from "react";

@@ -53,6 +53,15 @@ export function TweetArea ({tweets, setTweets}: TweetAreaProps){
     }, ...tweets])
     clearTweetArea();
     localStorage.setItem("tweets", JSON.stringify(tweets))
+    getTweets();
+  }
+
+  useEffect(() => {
+    localStorage.getItem('tweets') ? setTweets(JSON.parse(localStorage.getItem('tweets') || '')) : setTweets(tweets)
+  }, [tweets])
+
+  function getTweets(){
+    console.log(tweets)
   }
 
   const isTweetAreaEmpty = tweetText.length === 0;

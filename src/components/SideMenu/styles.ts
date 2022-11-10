@@ -11,8 +11,9 @@ export const Top = styled.div`
   max-width: 70%;
   .logo{
     margin: 1.5rem 1rem;
-    width: 30px;
+    fill: ${props => props.theme.colors.text};
   }
+
 `
 
 export const ButtonNavItem = styled.button`

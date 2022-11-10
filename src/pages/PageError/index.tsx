@@ -1,6 +1,6 @@
 import { Container } from "./styles"
 import { Sidebar } from "../../components/Sidebar/Sidebar"
-import { SideMenu } from "../../components/SideMenu/SideMenu"
+import { SideMenu } from "../../components/SideMenu"
 import { Error } from "../../components/Error";
 
 interface HomeProps{
