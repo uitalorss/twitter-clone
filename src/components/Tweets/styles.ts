@@ -11,7 +11,7 @@ export const Tweet = styled.div`
   margin: 1rem 0;
   padding: 1rem;
   border-top: 1px solid ${props => props.theme.colors.secondary};
-  border-bottom: 1px solid ${props => props.theme.colors.secondary}
+  border-bottom: 1px solid ${props => props.theme.colors.secondary};
 `
 
 export const TweetInfo = styled.div`

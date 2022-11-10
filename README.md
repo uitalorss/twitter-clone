@@ -16,10 +16,15 @@
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
 - [x] Criação dos componentes
-- [x] Documentação dos componentes no Storybook
-- [ ] Funcionalidade de adicionar tweet no feed
+- [ ] Documentação dos componentes no Storybook
+- [x] Funcionalidade de adicionar tweet no feed
 - [ ] Scroll na área do tweet
-- [ ] Alteração entre temas dark e light
+- [x] Alteração entre temas dark e light
+- [x] Página não encontrada estilizada.
+- [ ] Contabilização das curtidas de cada tweet.
+- [ ] Inserção de imagens no tweet.
+- [ ] Validação de login e cadastro de usuário.
+- [ ]
 
 ## 🚀 Instalando dependências
 

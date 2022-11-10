@@ -13,7 +13,9 @@ export const Top = styled.div`
     margin: 1.5rem 1rem;
     fill: ${props => props.theme.colors.text};
   }
-
+  a{
+    text-decoration: none;
+  }
 `
 
 export const ButtonNavItem = styled.button`
@@ -36,6 +38,7 @@ export const ButtonNavItem = styled.button`
   &:active{
     color: ${props => props.theme.colors.accent};
   }
+
 `
 
 export const Bottom = styled.div`
