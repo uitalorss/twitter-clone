@@ -21,44 +21,44 @@ export function TweetArea ({tweets, setTweets}: TweetAreaProps){
 
   function handleNewTweet(event: any){
     event.preventDefault();
-    setTweets([{
-      id: tweets.length + 1,
-      info: {
-        imgUser: '../../../src/assets/imageUser.png',
-        user: 'Jerome Bell',
-        tagUser: '@jeromeBell',
-        time: "indefinida",
-      },
-      content: {
-        tweetContent: tweetText,
-      },
-      actions: {
-        reply: {
-          icon: false,
-          counter: 0
+    if(localStorage.getItem('tweets')){
+      setTweets([{
+        id: tweets.length + 1,
+        info: {
+          imgUser: '../../../src/assets/imageUser.png',
+          user: 'Jerome Bell',
+          tagUser: '@jeromeBell',
+          time: "indefinida",
         },
-        retweet: {
-          icon: false,
-          counter: 0
+        content: {
+          tweetContent: tweetText,
         },
-        like: {
-          icon: false,
-          counter: 0
-        },
-        share: {
-          icon: false,
-          counter: 0
+        actions: {
+          reply: {
+            icon: false,
+            counter: 0
+          },
+          retweet: {
+            icon: false,
+            counter: 0
+          },
+          like: {
+            icon: false,
+            counter: 0
+          },
+          share: {
+            icon: false,
+            counter: 0
+          }
         }
-      }
-    }, ...tweets])
+      }, ...tweetsLocalStorage])
+    }
     clearTweetArea();
     localStorage.setItem("tweets", JSON.stringify(tweets))
-    getTweets();
   }
 
-  useEffect(() => {
-    localStorage.getItem('tweets') ? setTweets(JSON.parse(localStorage.getItem('tweets') || '')) : setTweets(tweets)
-  }, [tweets])
+  let tweetsLocalStorage = JSON.parse(localStorage.getItem('tweets') || '');
+
 
   function getTweets(){
     console.log(tweets)
