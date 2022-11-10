@@ -5,6 +5,7 @@ import { ListTweets, Tweet, InfoUser, TweetInfo, TweetContent, TweetActions, Twe
 import {AiOutlineHeart, AiFillHeart, AiOutlineRetweet} from 'react-icons/ai'
 import {FaRegComment} from 'react-icons/fa'
 import {MdIosShare} from 'react-icons/md'
+import { useEffect } from "react";
 
 export interface TweetsProps {
   tweets: IntTweets[];
@@ -24,12 +25,12 @@ export function Tweets({tweets, setTweets}: TweetsProps){
       return tweet;
     })
     setTweets(updateList)
+    localStorage.setItem("tweets", JSON.stringify(tweets))
   }
 
   return (
     <ListTweets>
       {tweets.map(item => {
-        console.log(item)
         return(
           <Tweet>
             <div className="avatar">

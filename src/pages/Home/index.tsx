@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Feed } from "../../components/Feed"
 import { Container } from "./styles"
 import { Sidebar } from "../../components/Sidebar/Sidebar"
@@ -73,6 +73,11 @@ export function Home({changeTheme}: HomeProps){
       }
     }
   ])
+
+  useEffect(() => {
+    localStorage.getItem('tweets') ? setTweets(JSON.parse(localStorage.getItem('tweets') || '')) : setTweets(tweets)
+  }, [tweets])
+  
   return(
       <Container>
         <SideMenu />

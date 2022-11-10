@@ -2,7 +2,7 @@ import imageUser from '../../../src/assets/imageUser.png';
 import { ActionsTweet, ButtonIcon, Icons, TweetForm, TweetInput } from './styles';
 import { Button } from '../Button/Button';
 import { Avatar } from '../Avatar/Avatar';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { IntTweets } from '../../types/tweets';
 import AiOutlineHeart from 'react-icons';
 
@@ -52,6 +52,7 @@ export function TweetArea ({tweets, setTweets}: TweetAreaProps){
       }
     }, ...tweets])
     clearTweetArea();
+    localStorage.setItem("tweets", JSON.stringify(tweets))
   }
 
   const isTweetAreaEmpty = tweetText.length === 0;
