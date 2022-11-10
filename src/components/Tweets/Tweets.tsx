@@ -26,7 +26,6 @@ export function Tweets({tweets, setTweets}: TweetsProps){
     setTweets(updateList)
   }
 
-
   return (
     <ListTweets>
       {tweets.map(item => {
