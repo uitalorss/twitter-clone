@@ -3,6 +3,7 @@ import {FollowAreaDiv, FollowAreaItem } from "./styles";
 import news1 from '../../../src/assets/images/imageNews1.png';
 import { Button } from "../Button/Button";
 import { Avatar } from "../Avatar/Avatar";
+import { Link } from "react-router-dom";
 
 
 export function FollowArea(){
@@ -29,16 +30,17 @@ export function FollowArea(){
           <FollowAreaItem>
             <Avatar size="small" source={item.image} alt="Item de usuário para seguir" />
             <div>
-              <a href="">
+              <Link to='404'>
                 <Title size="sm" color={"txt-primary"}>{item.user}</Title>
-              </a>
+              </Link>
               <span>{item.tagname}</span>
             </div>
             <Button size="small" color="transparent">Follow</Button>
           </FollowAreaItem>
         )
       })}
-        <a className="more" href="404.html">show more</a>
+
+      <Link to='404' className="more">show more</Link>
     </FollowAreaDiv>
   )
 }

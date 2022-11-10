@@ -1,11 +1,8 @@
 import { useState } from "react"
-import { ThemeProvider } from "styled-components"
 import { Feed } from "../../components/Feed"
 import { Container } from "./styles"
 import { Sidebar } from "../../components/Sidebar/Sidebar"
 import { SideMenu } from "../../components/SideMenu/SideMenu"
-import dark from "../../styles/themes/dark"
-import light from "../../styles/themes/light"
 import { IntTweets } from "../../types/tweets"
 
 interface HomeProps{
@@ -76,8 +73,6 @@ export function Home({changeTheme}: HomeProps){
       }
     }
   ])
-
-
   return(
       <Container>
         <SideMenu />

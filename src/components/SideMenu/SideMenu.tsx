@@ -17,27 +17,27 @@ export function SideMenu(){
     {
       name: 'Explore',
       source: '../../../src/assets/icons/explore.svg',
-      link: '/'
+      link: '/404'
     },
     {
       name: 'Notifications',
       source: '../../../src/assets/icons/notifications.svg',
-      link: '/'
+      link: '/404'
     },
     {
       name: 'Messages',
       source: '../../../src/assets/icons/messages.svg',
-      link: '/'
+      link: '/404'
     },
     {
       name: 'Bookmarks',
       source: '../../../src/assets/icons/bookmarks.svg',
-      link: '/'
+      link: '/404'
     },
     {
       name: 'Lists',
       source: '../../../src/assets/icons/lists.svg',
-      link: '/'
+      link: '/404'
     },
     {
       name: 'Profile',
@@ -48,7 +48,7 @@ export function SideMenu(){
     {
       name: 'More',
       source: '../../../src/assets/icons/more.svg',
-      link: '/'
+      link: '/404'
     },
   ]
 
@@ -68,7 +68,6 @@ export function SideMenu(){
                     <Title color='txt-primary'>{item.name}</Title>
                 </ButtonNavItem>
               </Link>
-
             )
           })}
         </div>

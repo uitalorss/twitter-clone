@@ -1,6 +1,6 @@
 import { Title } from "../Title/Title";
 import { InfoAreaDiv, InfoAreaItem, Image } from "./styles";
-import news1 from '../../../src/assets/images/imageNews1.png';
+import { Link } from "react-router-dom";
 
 
 export function InfoArea(){
@@ -52,7 +52,7 @@ export function InfoArea(){
           <InfoAreaItem>
             <div>
               <span>{item.topic.description} ° {item.topic.hour}</span>
-              <a href="404.html">{item.content.content}</a>
+              <Link to='404'>{item.content.content}</Link>
               <span>{item.content.trend}</span>
             </div>
             <Image>
@@ -61,7 +61,7 @@ export function InfoArea(){
           </InfoAreaItem>
         )
       })}
-      <a className="more" href="404.html">show more</a>
+      <Link to='404' className="more">show more</Link>
     </InfoAreaDiv>
   )
 }
